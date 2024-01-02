@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>Bakery - Menu</title>
+    <!-- adding link to font -->
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner&family=Oswald:wght@300&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- importing css-->
+    <style>
+    @import url(bakery.css);
+    </style>
+</head>
+<body class = "menu">
+    <header>
+        <!-- bootstrap navbar: when page is shrunk, the navbar turns into a toggle that drops/expands downward-->
+        <nav class = "navbar navbar-expand-lg navbar-light">
+            <div class = "container-fluid outline">
+                <button 
+                class = "navbar-toggler" 
+                type = "button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbar"
+                >
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <div class ="collapse navbar-collapse" id = "navbar">
+                    <div class ="navbar-nav">
+                               
+                        <a class = "nav-item nav-link" href ="index.html">Home ౨ৎ</a>
+                        <a class = "nav-item nav-link" href ="menu.html">Menu ౨ৎ</a>
+                        <a class = "nav-item nav-link" href ="customcake.html">Custom Cake Orders ౨ৎ</a>
+                        <a class = "nav-item nav-link" href ="merchandise.html">Merchandise ౨ৎ</a>
+                        <a class = "nav-item nav-link" href ="contact.html">Contact Us ౨ৎ</a>
+                        
+                      
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1><span class="linelength">୨♡୧ Menu ୨♡୧</span></h1>
+        <p><span class="linelength">Indulge in Our Sweet Delights!</span></p>
+
+      </header> 
+      <!-- main content of page -->
+      <main>
+        <ul>
+            <li><a href="#cakes">Cakes</a></li>
+            <li><a href="#pastries">Pastries</a></li>
+            <li><a href="#beverages">Beverages</a></li>
+        </ul>
+        <h3> Customer Favorites & Classics ₊✩‧₊˚౨ৎ˚₊✩‧₊</h3>
+
+        <div id="cakes">
+            <h2> Cakes </h2>
+            <dl>
+            <dt class = "customerfav">Matcha Green Tea Cake &mdash; <strong>customer favorite!</strong></dt>
+            <dd>A harmonious fusion of premium matcha, delicate layers, and a velvety finish, all elegantly crowned with a dusting of vibrant matcha powder. <span class="price">$9.99</span></dd>
+            <dt> Blueberry Cream Cake</dt>
+            <dd>A delightful harmony of juicy blueberries and a rich, silky cream filling, elegantly layered between tender cake. <span class="price">$9.99</span></dd>
+            </dl>
+            </div>
+        
+            <div id="pastries">
+            <h2> Pastries </h2>
+            <dl>
+            <dt> Sugar Cookie &mdash; <strong>customer favorite!</strong></dt>
+            <dd> A classic cookie that embodies the perfect balance of buttery goodness and a touch of sugary delight. <span class="price">$2.99</span></dd>
+            <dt> Almond Croissant</dt> 
+            <dd> A perfect fusion of flaky, golden-brown layers and a delicate almond filling. <span class="price">$4.99</span></dd></dd>
+            </dl>
+            </div>
+        
+            <div id="beverages">
+            <h2> Beverages </h2>
+            <dl>
+            <dt> Mocha Frappuccino </dt>
+            <dd> A heavenly fusion of velvety chocolate, espresso, and a whirlwind of whipped cream, creating a delectable, caffeine-infused treat. <span class="price">$5.99</span></dd>
+            <dt> Strawberry Frappuccino &mdash; <strong>customer favorite!</strong></dt>
+            <dd> A frosty delight swirling together ripe, red strawberries, and velvety whipped cream. <span class="price">$5.99</span></dd>
+            <dt> Matcha Latte</dt>
+            <dd> "An enchanting blend of vibrant matcha and silky steamed milk, crowned with a delicate foam swirl, creating a soothing, earthy indulgence." <span class="price">$5.99</span></dd>
+            </dl>
+            </div>
+
+            <h3>Dietary Considerations ₊✩‧₊˚౨ৎ˚₊✩‧₊</h3>
+            <caption>Our bakery proudly caters to various dietary preferences to ensure everyone can savor our customer favorites!</caption>
+            <table>
+            <colgroup></colgroup>
+            <colgroup span="3"></colgroup>
+            <thead>
+            <tr>
+                <th rowspan="2">&nbsp;</th>
+                <th colspan="2">All Locally Sourced Ingredients</th>
+                <th rowspan="2">Nut Free</th>
+            </tr>
+            <tr>
+                <th>Vegan</th>
+                <th>Gluten Free</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Matcha Green Tea Cake  </th>
+                <td>Yes</td>
+                <td>No</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <th scope="row">Sugar Cookie </th>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <th scope="row">Strawberry Frappuccino  </th>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            </tbody>
+            </table>
+
+      
+    
+      </main>
+      
+      <!-- aside content include details -->
+      <aside>
+        <h4>Experience the warmth of our welcoming store nestled in the vibrant heart of Downtown Detroit!</h4>
+        <p><span class="location">Location:</span> Detroit, Michigan</p>
+        <p><span class="day">Open Daily:</span> 9:00am to 7:00pm</p>
+      </aside>
+
+      <!-- footer with copyright info -->
+      
+      <footer>
+        <p>All content copyright &copy; 2023, Bakery.</p>
+      </footer>
+
+
+    
+    <!-- Bootstrap JS only --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

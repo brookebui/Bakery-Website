@@ -1,0 +1,419 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 110%;
+  background-color: #F5E3E0;
+  margin: 0;
+}
+
+body.menu{
+    
+    background-image: url(images/logotransparent.png);
+    background-repeat: no-repeat;
+    background-position: center 540px; 
+}
+
+
+#menu {
+    border: 3px solid #F5E3E0;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    }
+section {
+    background: #F5E3E0;
+    margin: 10px;
+    padding: 20px;
+    border: 1px dotted #CE789F;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    flex: 1 0 30%;
+}
+
+/* changing colors of links based on actions */
+a:link {
+    color: #C45A8A;
+}
+a:visited {
+    color: #7c5768;
+}
+a:focus, a:hover {
+    color: #e08ab1;
+    background-color: #fff;
+}
+a:active {
+    color: #de4f90;
+    background-color: #fff;
+}
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    padding-bottom: .2em;
+}
+/* headers */
+header {
+  color: white;
+  background:  url(images/animatedImage2.gif) no-repeat center center;
+  background-size: cover; 
+  text-align: center;
+  height: 19em;
+  background-color: rgba(255, 255, 255, .5);
+}
+header p {
+    font-style: italic;
+    font-size: 1.2em;
+    padding-top: 40px; 
+    line-height: 1;
+}
+header h1 {
+    line-height: 1.5;
+    margin-top: 1.2em;
+    padding-top: 3em; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav styles using bootstrap - navigation links at top of page */
+.navbar-nav a.nav-item.nav-link {
+    color: #C45A8A;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    list-style-type: none;
+}
+
+.navbar {
+    position: fixed;   
+    width: 100%;
+    top: 0;
+}
+
+nav, footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #E8B4BC; 
+}
+
+
+.outline{
+    display: block; 	
+    border: 1px solid #C45A8A; 	
+    border-radius: .5em; 	
+    padding: .5em 1em; 	
+    margin: .5em; 
+}
+
+/* main styles - central topic of page */
+
+main {
+  font-family: "Oswald",Georgia, serif;
+  background-color: rgba(255, 255, 255, .5);
+  line-height: 1.8em;
+  color: #555;
+  padding: 1em;
+  margin: 2.5%;
+  border: double 4px #e08ab1;
+  border-radius: 25px;
+  margin: 2.5%;
+}
+
+fieldset {
+    border: 2px solid #e08ab1; 
+    border-radius: 10px;
+    padding: 20px; 
+    margin-bottom: 20px; 
+    
+}
+legend {
+    font-weight: bold; 
+    color: #8D7C89;
+    margin-bottom: 10px; 
+
+  } 
+
+p.more {
+  font-family: Georgia, sans-serif;
+  text-transform: uppercase;
+  font-size: .8em;
+  clear: right;
+
+}
+
+/* image styles 
+main img {
+    float: right;
+    margin: 0 1em 1em 0; 
+}
+*/
+
+img {
+    float: right;
+    margin-right: 20px;
+    width: 250px;
+    clear: right;
+    height: auto;
+    max-width: 100%; /* Make images responsive */
+
+}
+
+/* styles for content set aside (times, location) */
+aside {
+  background-color: #F6F3ED;
+  padding: 1em;
+  padding-left: 45px;
+  border-top-right-radius: 25px;
+  margin: 1em 2.5% 0 10%;
+  border: double 4px #e08ab1;
+  border-radius: 25px;
+  margin: 2.5%;
+  
+}
+/* adjusting footer*/
+footer {
+  color: #CE789F;
+  text-align: center;
+  font-size: .8em;
+  padding: 1em;
+}
+
+/* adding fonts, colors, and sizes to headers and p */
+h1 {
+    font-family: "Oswald" , Georgia, serif;
+    font-size: 2.5em;
+    color:#8D7C89;
+}
+h2 {
+  color:#8D7C89;
+  font-family: "Oswald" , Georgia, serif;
+}
+
+h3 {
+    font-family: "Oswald" , Georgia, serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color:#8D7C89;
+    border-top: 1px solid;
+    border-left: 3px solid;
+    padding-left: 1em; 
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h4{
+    font-family: "Oswald" , Georgia, serif;
+    font-size: 1.2em;
+    color:#8D7C89
+}
+
+p{
+    color: #e08ab1;
+}
+
+/* extra styles for menu page and other details  */
+.day, .location {
+  color: #B08294;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+.linelength {
+    background: #f2dcdf;
+  } 
+
+.price {
+    font-weight: bold;
+    background: #E8B4BC;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    margin-top: auto;
+    color: #191919;
+    }
+
+dt {
+    font-weight: bold;
+}
+
+dd{
+    margin-left: 30px;
+    color: #e08ab1;
+}
+strong {
+    font-style: italic;
+}
+dt strong{
+    color:#E8B4BC
+}
+
+td, th { 
+    border: 1px solid #CCC; 
+}
+table { 
+    border: 1px solid black; 
+}
+
+blockquote{
+    margin-left: 30px;
+}
+
+
+/* Adding Responsive Design */
+@media screen and (min-width: 400px) {
+    nav ul li {
+      flex: none;
+    }
+    nav ul {
+      justify-content: center; 
+    }
+  }
+
+@media screen and (min-width: 480px) {
+main img {
+    float: right;
+    margin: 0 1em 1em 0;
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+}
+
+img[src*="specialties1"] {
+    margin-left: 50px;
+    -webkit-shape-outside: url(images/specialties1.jpeg);  
+    shape-outside: url(images/specialties1.jpeg);  
+    -webkit-shape-margin: 1em; 
+    shape-margin: 1em;
+}
+img[src*="about1"] {
+    margin-left: 50px;
+    -webkit-shape-outside: url(images/about1.jpeg);  
+    shape-outside: url(images/about1.jpeg);    
+    -webkit-shape-margin: 1em; 
+    shape-margin: 1em;
+}
+img[src*="cookies"] {
+    margin-left: 50px;
+    -webkit-shape-outside: url(images/cookies.jpeg);  
+    shape-outside: url(images/cookies.jpeg);  
+    -webkit-shape-margin: 1em; 
+    shape-margin: 1em;
+}
+img[src*="market"] {
+    margin-right: 50px;
+    -webkit-shape-outside: url(images/market.jpeg);  
+    shape-outside: url(images/market.jpeg);    
+    -webkit-shape-margin: 1em; 
+    shape-margin: 1em;
+}
+img[src*="mugs"] {
+    margin-right: 50px;
+    -webkit-shape-outside: url(images/mugs.jpeg);  
+    shape-outside: url(images/mugs.jpeg);    
+    -webkit-shape-margin: 1em; 
+    shape-margin: 1em;
+}
+img[src*="lunchbox"] {
+    margin-right: 50px;
+    -webkit-shape-outside: url(images/lunchbox.jpeg);  
+    shape-outside: url(images/lunchbox.jpeg);    
+    -webkit-shape-margin: 1em; 
+    shape-margin: 1em;
+}
+img[src*="totebags"] {
+    margin-right: 50px;
+    -webkit-shape-outside: url(images/tote.jpeg);  
+    shape-outside: url(images/tote.jpeg);    
+    -webkit-shape-margin: 1em; 
+    shape-margin: 1em;
+}
+img[src*="heartcookies"] {
+    margin-right: 50px;
+    -webkit-shape-outside: url(images/heartcookies.jpeg);  
+    shape-outside: url(images/heartcookies.jpeg);    
+    -webkit-shape-margin: 1em; 
+    shape-margin: 1em;
+}
+}
+
+@media screen and (min-width: 600px) {
+    header p {
+      display: block;
+      margin-top: -1.5em;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 1.2em;
+    }
+    main, h2, h3 {
+      font-family: "Oswald" , Georgia, serif; 
+    }
+    h2, h3 {
+      font-weight: bold;
+    }
+    main {
+      line-height: 1.8em;
+      padding: 1em;
+      border: double 4px #e08ab1;
+      border-radius: 25px;
+      margin: 2.5%; 
+    }
+  }
+  
+  @media screen and (min-width: 940px) {
+    #container {
+      display: grid;
+      grid-template-rows: auto min-height 5em;
+      grid-template-columns: minmax(25em, 1fr) 16em;
+      grid-template-areas: 
+        "banner banner"
+        "main hours"
+        "footer footer";
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+    header {
+      grid-area: banner;
+    }
+    main {
+      grid-area: main;
+    }
+    aside {
+      grid-area: hours;
+      background-color: #F6F3ED;
+      padding: 1em;
+      padding-left: 45px;
+    }
+    footer {
+      grid-area: footer;
+    }
+    section {
+        width: calc(50% - 20px); /* Adjust for smaller screens */
+    }
+    
+  } 
+
+  @media (max-width: 768px) {
+    section {
+        width: calc(50% - 20px); /* Adjust for smaller screens */
+    }
+    .navbar {
+        position: static; /* Lets navbar follow throughout screen */
+
+    }
+    header p {
+        line-height: 0.5;
+    }
+    header h1{
+        line-height: 0;
+    }
+}
+

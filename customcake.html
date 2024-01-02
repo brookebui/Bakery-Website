@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>Bakery - Custom Cake Order</title>
+    <!-- adding link to font -->
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner&family=Oswald:wght@300&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- importing css-->
+    <style>
+    @import url(bakery.css);
+    </style>
+</head>
+<body>
+    <header>
+        <!-- bootstrap navbar: when page is shrunk, the navbar turns into a toggle that drops/expands downward-->
+        <nav class = "navbar navbar-expand-lg navbar-light">
+            <div class = "container-fluid outline">
+                <button 
+                class = "navbar-toggler" 
+                type = "button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbar"
+                >
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <div class ="collapse navbar-collapse" id = "navbar">
+                    <div class ="navbar-nav">
+                                
+                        <a class = "nav-item nav-link" href ="index.html">Home ౨ৎ</a>
+                        <a class = "nav-item nav-link" href ="menu.html">Menu ౨ৎ</a>
+                        <a class = "nav-item nav-link" href ="customcake.html">Custom Cake Orders ౨ৎ</a>
+                        <a class = "nav-item nav-link" href ="merchandise.html">Merchandise ౨ৎ</a>
+                        <a class = "nav-item nav-link" href ="contact.html">Contact Us ౨ৎ</a>
+                        
+                  
+                      
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1><span class="linelength">୨♡୧ Custom Cake Orders ୨♡୧</span></h1>
+        <p><span class="linelength">Bring your sweetest dreams to life!</span></p>
+
+      </header> 
+      <!-- main content of page -->
+      <main>
+        <h4>We're delighted to assist you in creating the perfect cake for your special occasion. 
+            Ordering is as easy as a few clicks, so go ahead and let us know how we can sweeten your day!
+        </h4>
+        <h3> Cake Order Form ₊✩‧₊˚౨ৎ˚₊✩‧₊</h3>
+        <!-- begin form, will send form content to my email-->
+    <form
+        action="https://formspree.io/f/xoqogzee"
+        method="POST"
+    >
+        <!-- grouping form related controls using fieldset -->
+        <!-- adding labels for usability and accessibility -->
+        <fieldset>
+            <legend>Customer Information</legend>
+            <ul>
+                <li><label for="form-name">Name:</label><input type="text" name="name" id="form-name"></li>
+                <li><label for="form-tel">Phone Number:</label><input type="tel" name="telephone" id="form-tel"></li>
+                <li><label for="email">Email Address: <input type="email" name="email" id="form-email"></label></li>
+                <li><label for="form-date">Pickup Date:</label><input type="date" name="date" id="form-date"></li>
+            </ul>
+
+        </fieldset>
+
+        <h2>Design your Cake</h2>
+
+        <fieldset>
+            <legend>Custom Cake</legend>
+            <fieldset>
+                <!-- radio type to allow for multiple choices -->
+                <legend>Cake Shape <em>(choose one)</em></legend>
+                <ul>
+                    <li><label><input type="radio" name="shape" value="square"> Square</label></li>
+                    <li><label><input type="radio" name="shape" value="rectangle"> Rectangle</label></li>
+                    <li><label><input type="radio" name="shape" value="circle"> Circle</label></li>
+                    <li><label><input type="radio" name="shape" value="heart"> Heart</label></li>
+                    <!-- pulldown menu to select number of layers for cake -->
+                    <p>How many layers?:
+                        <select name="layers"
+                        size="1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        </select>
+                    </p>
+                </ul>
+            </fieldset>
+
+            <!-- checkbox type to allow for multiple choices -->
+    
+            <fieldset>
+                <legend>Cake Flavor(s) <em>(multiple if layered)</em></legend>
+                <ul>
+                    <li><label><input type="checkbox" name="flavors" value="vanilla" checked> Vanilla</label></li>
+                    <li><label><input type="checkbox" name="flavors" value="chocolate"> Chocolate</label></li>
+                    <li><label><input type="checkbox" name="flavors" value="strawberry"> Strawberry</label></li>
+                    <li><label><input type="checkbox" name="flavors" value="red velvet"> Red Velvet</label></li>
+                </ul>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Icing <em>(choose one)</em></legend>
+                <ul>
+                    <li><label><input type="radio" name="icing" value="buttercream"> Buttercream</label></li>
+                    <li><label><input type="radio" name="icing" value="chocolate"> Chocolate</label></li>
+                    <li><label><input type="radio" name="icing" value="strawberry"> Strawberry</label></li>
+                    <li><label><input type="radio" name="icing" value="matcha"> Matcha</label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Filling(s) <em>(multiple if layered)</em></legend>
+                <ul>
+                    <li><label><input type="checkbox" name="fillings" value="buttercream" checked> Buttercream</label></li>
+                    <li><label><input type="checkbox" name="fillings" value="chocolate"> Chocolate</label></li>
+                    <li><label><input type="checkbox" name="fillings" value="strawberry"> Raspberry</label></li>
+                    <li><label><input type="checkbox" name="fillings" value="matcha"> Matcha</label></li>
+                </ul>
+            </fieldset>
+
+            <!-- multiline text area to allow customer to type a custom design -->
+            <ul>
+            <br>
+            <li>Custom Design:<br>
+                <textarea name="design" rows="4" cols="60"
+                maxlength="400" placeholder="No more than 500 characters long."></textarea>
+            </li>
+            </ul>
+
+                <!-- add buttons to place order or reset order -->
+                <p><input type="submit" value="Place Order"><input type="reset"></p>
+
+        </fieldset>
+
+        
+
+        
+        
+
+    </form>
+      
+    
+      </main>
+      
+      <!-- aside content include details -->
+      <aside>
+        <h4>Experience the warmth of our welcoming store nestled in the vibrant heart of Downtown Detroit!</h4>
+        <p><span class="location">Location:</span> Detroit, Michigan</p>
+        <p><span class="day">Open Daily:</span> 9:00am to 7:00pm</p>
+      </aside>
+
+      <!-- footer with copyright info -->
+      
+      <footer>
+        <p>All content copyright &copy; 2023, Bakery.</p>
+      </footer>
+
+    <!-- Bootstrap JS only --> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
